@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2021-05-12 07:57:09
+-- 生成日時: 2021-05-13 07:32:32
 -- サーバのバージョン： 10.4.18-MariaDB
 -- PHP のバージョン: 7.4.16
 
@@ -83,7 +83,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`num`, `name`, `id`, `mail`, `password`) VALUES
-(1, '上村', 'kami', 'kami@gmail.com', 'aaa');
+(1, '上村', 'kami', 'kami@gmail.com', 'aaa'),
+(3, 'a', 'a', 'a', 'a'),
+(4, 'a', 'a', 'a', 'a');
 
 --
 -- ダンプしたテーブルのインデックス
@@ -130,7 +132,7 @@ ALTER TABLE `book`
 -- テーブルの AUTO_INCREMENT `user`
 --
 ALTER TABLE `user`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- ダンプしたテーブルの制約
