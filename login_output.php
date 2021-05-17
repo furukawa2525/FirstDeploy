@@ -25,3 +25,24 @@
 		];
 	}
 ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ログイン画面</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<?php
+	require 'menu.php';
+	if (isset($_SESSION['user'])) {
+		echo 'ようこそ', $_SESSION['user']['name'], 'さん。';
+	} else {
+		echo 'メールアドレスまたはパスワードが違います。';
+	}
+	?>
+</body>
+
+</html>
