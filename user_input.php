@@ -12,12 +12,12 @@
 
 <body>
 	<?php require 'menu.php'; ?>
-    <form action="db_connect.php" method="post">
+    <form action="user_output.php" method="post">
 	<table>
 	<tr><th><label for="name" >名前</label></th>
 	<td><input type="text" name="name" value=""></td>
 	</tr>
-	<tr><th><label for="address">メールアドレス</label></th>
+	<tr><th><label for="mail">メールアドレス</label></th>
 	<td><input type="text" name="mail" value=""></td>
 	</tr>
 	<tr><th><label for="password">パスワード</label></th>
