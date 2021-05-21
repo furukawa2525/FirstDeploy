@@ -5,7 +5,7 @@
   // 利用するデータベース
   $dbName = 'bookstore';
   // MySQLサーバ
-  $host = 'localhost';
+  $host = 'db-mysql.c09iafkngt3a.us-east-1.rds.amazonaws.com';
   // MySQLのDSN文字列
   $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   //MySQLデータベースに接続する
