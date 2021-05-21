@@ -1,9 +1,9 @@
-version: 0.0  # 0.0固定
-os: linux     # デプロイ先サーバーのOS
-files:        # アプリケーションの配置場所
+version: 0.0
+os: linux
+files:
   - source: /
     destination: /home/ec2-user/php
-permissions:  # 配置ディレクトリのパーミッション
+permissions:
   - object: /home/ec2-user/php
     owner: ec2-user
     group: nginx
