@@ -1,0 +1,115 @@
+.wrapper{
+    margin: 5%;
+}
+
+table {
+    border-collapse: collapse;
+  }
+   
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+   
+  input[type="submit"],
+  input[type="text"],
+  select,
+  textarea,
+  button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+   
+   
+  input[type="text"],
+  textarea {
+    background: #f8f8f8;
+    display: block;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 480px;
+    transition: 0.8s;
+    border-radius: 0;
+  }
+   
+  input[type="text"]:focus,
+  textarea:focus {
+    background: #e9f5fb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+   
+  textarea[name="content"] {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+  }
+   
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  ::-moz-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  :-ms-input-placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+   
+  .form-table {
+    width: 100%;
+  }
+   
+  .form-table th,
+  .form-table td {
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 20px;
+  }
+   
+  .form-table th {
+    background: #ffecea;
+    padding-left: 50px;
+    position: relative;
+    text-align: left;
+    width: 300px;
+  }
+
+  /* ------------------------------------------- */
+  /* ここから下がボタンのCSS　*/
+  .container {
+    font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .btn-denim {
+    display: inline-block;
+    max-width: 180px;
+    text-align: left;
+    background-color: #293b6a;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px dashed #FFF;
+    box-shadow: 0px 0px 0px 5px #293b6a;/* box-shadowで外枠を */
+  }
+  
+  .btn-denim:hover {
+    border-style: solid;
+  }

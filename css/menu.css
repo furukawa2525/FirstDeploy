@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* 共通部分 */
+img{
+    width:100%;
+}
+html{
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+div{
+    line-height: 1.7;
+}
+/* ------------------------------------- */
+
+/* 全体の親要素 */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+/* ------------------------------------- */
+/* ロゴ部分 */
+/* 子要素 */
+.logo_wrapper{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    /* align-items: center; */
+    /* 謎の空白をなくしたい */
+    margin: 0;
+    /* margin-left: 5%; */
+}
+
+/* ロゴ画像 */
+.logo{
+    /* background-color: black; */
+    height: 70%;
+}
+
+.logo img{
+    height: 100%;
+}
+/* メインタイトル */
+.title{
+    /* background-color: blue; */
+    text-align: center;
+    height: 30%;
+}
+
+/* ------------------------------------------ */
+/* ナビゲーション部分 */
+/* 子要素 */
+.nav_wrapper{
+    /* background-color: yellow; */
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+
+.box{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+}
+/* ----------------------------------------------- */
+/* 購入履歴 */
+/* .parchase_check{
+} */
+
+/* ------------------------------------------------- */
+/* カート */

@@ -1,1 +1,81 @@
+@charset "UTF-8";
 
+/* 共通部分 */
+html{
+    font-size: 100%;
+}
+body{
+    line-height: 1.7;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* ページ全体の横幅 */
+.header{
+    height: 200px;
+}
+
+
+.wrapper{
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+/* ---------------------------------------- */
+/* コンテンツ部分 */
+.contents{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.main_center{
+    /* background-color: yellow; */
+    width: 70%;
+}
+.main_center h2{
+    text-align: left;
+    border-bottom: solid 3px gray;
+    font-size: 1.25em;
+}
+
+
+.item a{
+    text-align: center;
+}
+.item h3{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+/* ------------------------------------------------------- */
+aside{
+    /* background-color: lightgreen; */
+    /* border-right: 1px solid gray; */
+    margin-right: 30px;
+    width: 25%;
+}
+
+aside h2{
+    text-align: left;
+    border-bottom: solid 3px gray;
+    font-size: 1.25em;
+    /* background-color: lightgreen; */
+    margin-left: 5px;
+}
+
+aside li{
+    list-style: none;
+}
