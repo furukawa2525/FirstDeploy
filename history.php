@@ -5,14 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <title>購入履歴画面</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/history.css">
 </head>
 
 <body>
-
-    <header>
-        ヘッダー
-    </header>
     <?php require 'menu.php'; ?>
 
     <div class="history_main">

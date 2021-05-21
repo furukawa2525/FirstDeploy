@@ -1,49 +1,57 @@
-<!-- <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-<link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Corben:700" rel="stylesheet">  -->
 
-<div class="header"> 
-        <!-- ロゴ・アイコン/孫要素 -->
-        <!-- トップ画面に戻る -->
-        <a href="index.php">
-            <div class="logo">
-                    <div class="icon">
-                        <i class="fas fa-bahai size"></i>
-                </div>
-                <div class="title">
-                    <h1>Kamison</h1>
-                </div>
+
+<!-- 全部のヘッダー部分 -->
+<div class="header">
+
+<!-- ------------------------------------------------------------ -->
+
+    <!-- ロゴ部分開始 -->
+    <div class="logo_wrapper">
+    <!-- トップ画面に戻る -->
+            <div class="element logo">
+                <a href="index.php"><img src="images/home.svg" alt=""></a>
             </div>
-        </a>
-<?php //ログイン前は表示されないように処理
-if (isset($_SESSION['user'])) {
-?>
-    <div class="item purchase_check">
-        <a href="history.php"><i class="fas fa-shopping-basket nav_size"></i></a>
-        <a href="history.php"><p>購入履歴</p></a>
+            <div class="element title">
+                <a href="index.php"><p>Kamison</p></a>
+            </div>
     </div>
-<?php
-}
-?>
+    <!-- ロゴの部分・タイトルはここまで -->
 
-<?php
-if ((isset($_SESSION['user']))) {
-?>
-<div class="item cart">
-        <a href="cart_show.php"><i class="fas fa-cart-plus nav_size"></i></a>
-        <a href="cart_show.php"><p>カート</p></a>
-    </div>
-<?php
-}
-?>
+<!-- ------------------------------------------------------------- -->
 
-<?php
-if ((isset($_SESSION['user']))) {
+    <!-- ナビゲーション部分開始 -->
+    <div class="nav_wrapper">
+        <?php //ログイン前は表示されないように処理
+            if (isset($_SESSION['user'])) {
+        ?>
+    <!-- 購入履歴 -->
+        <div class="box purchase_check">
+            <div class="element logo">
+                <a href="history.php"><img src="images/history.svg" alt=""></a>
+            </div>
+            <div class="element title">
+                <a href="history.php"><p>購入履歴</p></a>
+            </div>
+        </div>
+            <?php
+            }
+        ?>
+
+<?php //ログイン後は表示されないように処理
+if (!(isset($_SESSION['user']))) {
 ?>
-<div class="item buy">
-        <a href="purchase_input.php"><i class="fas fa-money-check-alt"></i></a>
-        <a href="purchase_input.php"><p>購入</p></a>
-</div>
+    <!-- カート -->
+        <div class="box cart">
+            <div class="element logo">
+                <a href="cart_show.php"><img src="images/cart.svg" alt=""></a>
+            </div>
+            <div class="element title">
+                <a href="cart_show.php"><p>カート</p></a>
+            </div>
+        </div>
 <?php
 }
 ?>
@@ -51,10 +59,32 @@ if ((isset($_SESSION['user']))) {
 <?php //ログイン後は表示されないように処理
 if (!(isset($_SESSION['user']))) {
 ?>
-<div class="item login">
-    <a href="login_input.php"><i class="fas fa-sign-in-alt nav_size"></i></a>
-    <a href="login_input.php"><p>ログイン</a></p>
-</div>
+    <!-- 購入 -->
+        <div class="box buy">
+            <div class="element logo">
+                <a href="purchase_input.php"><img src="images/buy.svg" alt="サンプル画像"></a>
+            </div>
+            <div class="element title">
+                <a href="purchase_input.php"><p>購入</p></a>
+            </div>
+        </div>
+<?php
+}
+?>
+
+
+<?php //ログイン後は表示されないように処理
+if (!(isset($_SESSION['user']))) {
+?>
+    <!-- ログイン -->
+        <div class="box login">
+            <div class="element logo">
+                <a href="login_input.php"><img src="images/login.svg" alt=""></a>
+            </div>
+            <div class="element title">
+                <a href="login_input.php"><p>ログイン</a></p>
+            </div>
+        </div>
 <?php
 }
 ?>
@@ -62,10 +92,15 @@ if (!(isset($_SESSION['user']))) {
 <?php //ログイン前は表示されないように処理
 if (isset($_SESSION['user'])) {
 ?>
-<div class="item login">
-    <a href="logout_input.php"><i class="fas fa-sign-in-alt nav_size"></i></a>
-    <a href="logout_input.php"><p>ログアウト</p></a>
-</div>
+    <!-- ログアウト -->
+        <div class="box logout">
+            <div class="element logo">
+                <a href="logout_input.php"><img src="images/logout.svg" alt=""></a>
+            </div>
+            <div class="element title">
+                <a href="logout_input.php"><p>ログアウト</p></a>
+            </div>
+        </div>
 <?php
 }
 ?>
@@ -73,12 +108,20 @@ if (isset($_SESSION['user'])) {
 <?php //ログイン後は表示されないように処理
 if (!(isset($_SESSION['user']))) {
 ?>
-<div class="item user_input">
-        <a href="user_input.php"><i class="fas fa-users nav_size"></i></a>
-        <a href="user_input.php"><p>会員登録</p></a>
-    </div>
+    <!-- 会員登録 -->
+        <div class="box user_input">
+            <div class="element logo">
+                <a href="user_input.php"><img src="images/account.svg" alt=""></a>
+            </div>
+            <div class="element title">
+                <a href="user_input.php"><p>会員登録</p></a>
+            </div>
+        </div>
 <?php
 }
 ?>
+    </div>
+<!-- ナビゲーション部分ここまで -->
+<!-- -------------------------------------------------------- -->
 </div>
 <hr>

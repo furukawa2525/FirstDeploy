@@ -82,8 +82,8 @@ CREATE TABLE `user` (
 -- テーブルのデータのダンプ `user`
 --
 
-INSERT INTO `user` (`num`, `name`, `mail`, `password`) VALUES
-(1, '上村', 'kami@gmail.com', 'aaa');
+INSERT INTO `user` (`num`, `name`, `id`, `mail`, `password`) VALUES
+(1, '上村', 'kami', 'kami@gmail.com', 'aaa');
 
 --
 -- ダンプしたテーブルのインデックス
